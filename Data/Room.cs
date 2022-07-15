@@ -1,16 +1,17 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace HotelManagementApp.Data
 {
     class Room : Table
     {
-        public Room(int number, string phone)
+        public Room(string number, string phone)
         {
-            Number = number;
+            Number= number;
             Phone = phone;
         }
-
-        public int Number {get; set;}
+        [Key]
+        public string Number{get; set;}
         public string Phone {get; set;}
 
         public override string ToString()

@@ -21,11 +21,10 @@ namespace HotelManagementApp.Data
         public override string ToString()
         {
             StringBuilder builder = new StringBuilder();
-            builder.Append(GetStringWithLengthN(Id,20));
+            builder.Append(GetStringWithLengthN(Id,12));
             builder.Append(GetStringWithLengthN(First_name,20));
             builder.Append(GetStringWithLengthN(Last_name,20));
             builder.Append(GetStringWithLengthN(Phone,20));
-            builder.Append("\n");
             return builder.ToString();
         }
     }

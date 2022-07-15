@@ -1,5 +1,6 @@
 ﻿using System;
 using HotelManagementApp.Data;
+using HotelManagementApp.Context;
 
 namespace HotelManagementApp
 {
@@ -9,14 +10,14 @@ namespace HotelManagementApp
         {
             using(GuestContext GuestDb = new GuestContext())
             {
-                Guest g1 = new Guest("1212","234","43553","fsdf");
+                Guest g1 = new Guest("783","2sfdsf","453","fsdf");
                 GuestDb.Guest.Add(g1);
                 if(GuestDb.SaveChanges()>0)
                     System.Console.WriteLine("Radi");
                 else 
                     System.Console.WriteLine("Vec ima!");
 
-                System.Console.WriteLine(string.Join("",GuestDb.Guest));
+                System.Console.WriteLine(string.Join("\n",GuestDb.Guest));
             }
         }
     }

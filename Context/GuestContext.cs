@@ -1,8 +1,9 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using HotelManagementApp.Data;
 
-namespace HotelManagementApp.Data
+namespace HotelManagementApp.Context
 {
     class GuestContext : DbContext
     {
